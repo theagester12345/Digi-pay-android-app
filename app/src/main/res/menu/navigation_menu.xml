@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_sell"
+        android:icon="@mipmap/ghanaian_cedi"
+        android:title="Sell Item"/>
+
+
+    <item android:id="@+id/nav_sms"
+        android:icon="@mipmap/ic_textsms_black_48dp"
+        android:title="View SMS"/>
+    <item android:id="@+id/nav_inventory"
+        android:icon="@mipmap/ic_store_black_48dp"
+        android:title="Inventory"/>
+    <item android:id="@+id/nav_report"
+        android:icon="@mipmap/newspaper"
+        android:title="View Report"/>
+
+</menu>

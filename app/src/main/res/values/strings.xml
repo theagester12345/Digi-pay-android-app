@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DigiPay</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="pref_previously_started">pref_previously_started</string>
+
+</resources>

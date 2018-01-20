@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.digipay.digipay.inventory">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#5C6BC0"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/Inv_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:orientation="horizontal"
+            android:background="#5C6BC0">
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_search_white_36dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="6dp"
+                >
+              <EditText
+                  android:id="@+id/search_inv"
+                  android:layout_marginTop="1dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:ems="1"
+                  android:backgroundTint="#FFF"
+                  android:layout_marginBottom="5dp"
+                  android:textColor="#FFF"
+                  android:textSize="17sp"
+                  android:textColorHint="#FFF"
+                  android:hint="Search..."/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            android:id="@+id/add_layout"
+            app:rv_centered="true"
+            app:rv_rippleDuration="100"
+            app:rv_type="simpleRipple"
+            app:rv_framerate="6"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="#5C6BC0">
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_add_white_36dp" />
+        </com.andexert.library.RippleView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5C6BC0"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FFF"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Unit Cost"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FFF"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Stock Qty."
+                android:textSize="15sp"
+                android:gravity="center_vertical|right"
+                android:textStyle="bold"
+                android:textColor="#FFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
