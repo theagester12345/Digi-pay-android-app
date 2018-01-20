@@ -49,8 +49,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         SharedPreferences settings = getSharedPreferences("prefs",0);
         boolean firstrun = settings.getBoolean("firstrun",true);
         if(firstrun){
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putBoolean("firstrun", false);
+            editor.apply();
             startActivityForResult(new Intent(this, setup_page.class),010);
         }
+
 
         mdrawer = (DrawerLayout) findViewById(R.id.drawer);
         toggle = new ActionBarDrawerToggle(this,mdrawer,R.string.open,R.string.close);
